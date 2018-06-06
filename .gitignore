@@ -44,3 +44,12 @@ pip-log.txt
 .pydevproject
 *.sublime-workspace
 *.sw[op]
+
+# virtualenv
+venv
+
+# VSCode 
+.vscode
+
+#pytest
+.pytest_cache
