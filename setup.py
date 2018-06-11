@@ -71,7 +71,12 @@ setup(name="thriftpy",
       author="Lx Yu",
       author_email="i@lxyu.net",
       packages=find_packages(exclude=['benchmark', 'docs', 'tests']),
-      package_data={"thriftpy": ["contrib/tracking/tracking.thrift"]},
+      package_data={
+          "thriftpy": [
+              "contrib/tracking/tracking.thrift",
+              "contrib/finagle/tracing/tracing.thrift"
+           ]
+       },
       entry_points={},
       url="https://thriftpy.readthedocs.org/",
       license="MIT",
