@@ -6,7 +6,6 @@ from .binary import TBinaryProtocol, TBinaryProtocolFactory
 from .json import TJSONProtocol, TJSONProtocolFactory
 from .compact import TCompactProtocol, TCompactProtocolFactory
 from .multiplex import TMultiplexedProtocol, TMultiplexedProtocolFactory
-from .finagle import TFinagleProtocol, TFinagleProtocolFactory
 
 from thriftpy._compat import PYPY, CYTHON
 if not PYPY:
@@ -24,5 +23,4 @@ __all__ = ['TBinaryProtocol', 'TBinaryProtocolFactory',
            'TCyBinaryProtocol', 'TCyBinaryProtocolFactory',
            'TJSONProtocol', 'TJSONProtocolFactory',
            'TMultiplexedProtocol', 'TMultiplexedProtocolFactory',
-           'TCompactProtocol', 'TCompactProtocolFactory',
-           'TFinagleProtocol', 'TFinagleProtocolFactory']
+           'TCompactProtocol', 'TCompactProtocolFactory']
